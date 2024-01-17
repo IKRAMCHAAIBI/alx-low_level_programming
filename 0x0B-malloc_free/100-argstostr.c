@@ -19,11 +19,11 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		for (n = 0; av[i][n]; n++)
-			I++;
+			| ++;
 	}
 
-	I += ac;
-	str = malloc(sizeof(char) * I + 1);
+	| += ac;
+	str = malloc(sizeof(char) * | +1);
 
 	if (str == NULL)
 		return (NULL);
